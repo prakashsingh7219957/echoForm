@@ -1,5 +1,6 @@
-Flask==3.0.3
+flask
 pandas
-langchain-community
 faiss-cpu
+langchain-community
+langchain-ollama
 ollama

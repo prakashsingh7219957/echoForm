@@ -1,0 +1,5 @@
+Flask==3.0.3
+pandas
+langchain-community
+faiss-cpu
+ollama

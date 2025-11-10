@@ -5,6 +5,7 @@ from langchain_community.vectorstores import FAISS
 import ollama
 import json
 from ollama import Client
+import os
 
 # ✅ Correct base URL
 ollama_client = Client(host="https://sanguinarily-unprolongable-katy.ngrok-free.dev:11434")
@@ -56,4 +57,5 @@ def fill_form():
     return jsonify(result)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+#    app.run(host="0.0.0.0", port=5000, debug=True)

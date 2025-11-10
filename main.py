@@ -8,7 +8,7 @@ from ollama import Client
 import os
 
 # ✅ Correct base URL
-ollama_client = Client(host="https://sanguinarily-unprolongable-katy.ngrok-free.dev:11434")
+ollama_client = Client(host="https://sanguinarily-unprolongable-katy.ngrok-free.dev")
 
 app = Flask(__name__)
 
